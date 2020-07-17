@@ -1,0 +1,71 @@
+<html>
+
+<body>
+	<div class="flexbox-container">
+		<div class="flexbox-item flexbox-item-1">1</div>
+		<div class="flexbox-item flexbox-item-2">2</div>
+		<div class="flexbox-item flexbox-item-3">3</div>
+		<div class="flexbox-item flexbox-item-4">4</div>
+		<div class="flexbox-item flexbox-item-5">5</div>
+	</div>
+
+</body>
+<style>
+	* {
+		font-size: x-large;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.flexbox-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: left;
+		align-items: center;
+		background-color: lightblue;
+	}
+
+	.flexbox-item {
+		margin: 10px;
+		width: 100px;
+	}
+
+	.flexbox-item-1 {
+		align-self: flex-start;
+		min-height: 100px;
+		line-height: 100px;
+		background-color: lightcyan;
+		order: 5;
+	}
+
+	.flexbox-item-2 {
+		align-self: flex-end;
+		min-height: 200px;
+		line-height: 200px;
+		background-color: lightgoldenrodyellow;
+	}
+
+	.flexbox-item-3 {
+		min-height: 300px;
+		line-height: 300px;
+		background-color: lightskyblue;
+	}
+
+	.flexbox-item-4 {
+		min-height: 100px;
+		line-height: 100px;
+		background-color: lightseagreen;
+		flex-shrink: 0;
+	}
+
+	.flexbox-item-5 {
+		min-height: 300px;
+		line-height: 300px;
+		background-color: lightcyan;
+		flex-grow: 1;
+	}
+</style>
+
+</html>
